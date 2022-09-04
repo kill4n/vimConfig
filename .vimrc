@@ -26,18 +26,9 @@ set nowritebackup
 " Set a low updatetime to improve user experience
 set updatetime=300
 
-
-
-
-" Plugins Section
-call plug#begin()
-" Plugin for autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
-
-" Typing
-Plug 'jiangmiao/auto-pairs' " Auto close brackets
-
-call plug#end()
+so ~/.vim/plugins.vim
+so ~/.vim/plugin-config.vim
+so ~/.vim/maps.vim
 
 
 
