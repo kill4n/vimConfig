@@ -26,10 +26,9 @@ set nowritebackup
 " Set a low updatetime to improve user experience
 set updatetime=300
 
+set laststatus=2
+set noshowmode
+
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
-
-
-
-imap jk <Esc>
