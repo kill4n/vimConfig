@@ -21,4 +21,12 @@ Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
+" LSP config
+Plug 'neovim/nvim-lspconfig'
+
 call plug#end()
+
+
+lua require("lsp_config")
+autocmd BufWritePre *.go lua vim.lsp.buf.formatting()
+autocmd BufWritePre *.go lua goimports(1000)
